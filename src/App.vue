@@ -1,28 +1,31 @@
+<script src="router/index.js"></script>
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+    <router-view></router-view>
+
   </div>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+    import HelloWorld from './components/HelloWorld.vue' ;
+    import TheHeader from './components/TheHeader.vue' ;
+    import TheFooter from './components/TheFooter.vue' ;
 
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+    export default {
+        name: "app",
+
+    }
+
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  @import './assets/css/site.css';
+  @import './assets/css/bootstrap.css';
+  @import './assets/css/bootstrap-extend.css';
+  @import './assets/css/brand-icons/brand-icons.min.css';
+  @import './assets/css/material-design/material-design.min.css';
+  @import 'http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic';
+  @import './assets/css/flag-icon-css/flag-icon.css';
+  @import './assets/css/custom.css';
+
 </style>

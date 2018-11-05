@@ -12,7 +12,7 @@
                     <i class="icon md-more" aria-hidden="true"></i>
                 </button>
                 <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
-                    <!--<img class="navbar-brand-logo" src="../images/logo1.png" title="Stringee">-->
+                    <img class="navbar-brand-logo" src="../assets/images/logo1.png" title="Stringee">
                     <span class="navbar-brand-text hidden-xs-down"> Stringee</span>
                 </div>
                 <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-search"
@@ -88,7 +88,7 @@
                             <a class="nav-link navbar-avatar" data-toggle="dropdown" href="#" aria-expanded="false"
                                data-animation="scale-up" role="button">
 						<span class="avatar avatar-online">
-							<!--<img src="../../global/portraits/5.jpg" alt="...">-->
+							<img src="../assets/images/5.jpg" alt="...">
 							<i></i>
 						</span>
                             </a>
@@ -130,35 +130,31 @@
         <div class="site-menubar site-menubar-dark">
             <ul class="site-menu">
                 <li class="site-menu-item">
-                    <a class="animsition-link" href="index.html" :class="fold-show" data-placement="right" data-toggle="tooltip"
+                    <a class="animsition-link" href="index.html"  data-placement="right" data-toggle="tooltip"
                        data-original-title="Home">
                         <i class="site-menu-icon md-home" aria-hidden="true"></i>
                         <span class="site-menu-title">Home</span>
                     </a>
                 </li>
                 <li class="site-menu-item active">
-                    <a class="animsition-link" href="company-list.php" :class="fold-show" data-placement="right" data-toggle="tooltip"
-                       data-original-title="Company">
+                    <router-link  data-placement="right" data-toggle="tooltip"
+                                  data-original-title="Contact" to="/contact" class="animsition-link">
+
                         <i class="site-menu-icon md-city-alt" aria-hidden="true"></i>
-                        <span class="site-menu-title">Company</span>
-                    </a>
-                </li>
-                <li class="site-menu-item">
-                    <a class="animsition-link" href="contact-list.php" :class="fold-show" data-placement="right" data-toggle="tooltip"
-                       data-original-title="Contact">
-                        <i class="site-menu-icon md-account-box" aria-hidden="true"></i>
                         <span class="site-menu-title">Contact</span>
-                    </a>
+
+                    </router-link>
                 </li>
+
                 <li class="site-menu-item">
-                    <a class="animsition-link" href="index.html" :class="fold-show" data-placement="right" data-toggle="tooltip"
+                    <a class="animsition-link" href="index.html"  data-placement="right" data-toggle="tooltip"
                        data-original-title="Filter">
                         <i class="site-menu-icon md-label" aria-hidden="true"></i>
                         <span class="site-menu-title">Filter</span>
                     </a>
                 </li>
                 <li class="site-menu-item">
-                    <a class="animsition-link" href="index.html" :class="fold-show" data-placement="right" data-toggle="tooltip"
+                    <a class="animsition-link" href="index.html"  data-placement="right" data-toggle="tooltip"
                        data-original-title="Report">
                         <i class="site-menu-icon md-chart" aria-hidden="true"></i>
                         <span class="site-menu-title">Report</span>
@@ -166,7 +162,7 @@
                 </li>
 
                 <li class="site-menu-item">
-                    <a class="animsition-link" href="index.html" :class="fold-show" data-placement="right" data-toggle="tooltip"
+                    <a class="animsition-link" href="index.html"  data-placement="right" data-toggle="tooltip"
                        data-original-title="Settings">
                         <i class="site-menu-icon md-settings" aria-hidden="true"></i>
                         <span class="site-menu-title">Setting</span>
@@ -181,10 +177,14 @@
 
 <script>
     export default {
-        name: "SideBar-Left"
+        name: "SideBarLeft"
     }
 </script>
 
 <style scoped>
+
+    .fold-show {
+
+    }
 
 </style>
