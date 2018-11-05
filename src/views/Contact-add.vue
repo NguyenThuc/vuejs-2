@@ -40,12 +40,7 @@
                             <div class="col-md-12 col-lg-6">
 
                                 <form  method="post"  v-on:submit.prevent="addContact" >
-                                    <div v-if="errors.length">
-                                        <b class="text-danger">Please correct the following error(s):</b>
-                                        <ul >
-                                            <li class="text-danger custom-error"  v-for="error in errors">{{ error }}</li>
-                                        </ul>
-                                    </div>
+
 
                                     <div class="form-group form-group-sm row">
                                         <label class="col-md-3 col-form-label font-weight-400">Full Name: </label>

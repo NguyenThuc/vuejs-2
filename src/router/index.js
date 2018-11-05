@@ -24,5 +24,6 @@ export default new Router({
             path: "/contact/add",
             component: () => import("@/views/Contact-add")
         },
+
     ]
 });

@@ -139,25 +139,22 @@
                 <li class="site-menu-item active">
                     <router-link  data-placement="right" data-toggle="tooltip"
                                   data-original-title="Contact" to="/contact" class="animsition-link">
-
                         <i class="site-menu-icon md-city-alt" aria-hidden="true"></i>
                         <span class="site-menu-title">Contact</span>
-
                     </router-link>
                 </li>
-
                 <li class="site-menu-item">
-                    <a class="animsition-link" href="index.html"  data-placement="right" data-toggle="tooltip"
-                       data-original-title="Filter">
+                    <router-link  data-placement="right" data-toggle="tooltip"
+                                  data-original-title="Contact" to="/contact/add" class="animsition-link">
                         <i class="site-menu-icon md-label" aria-hidden="true"></i>
-                        <span class="site-menu-title">Filter</span>
-                    </a>
+                        <span class="site-menu-title">Add Contact</span>
+                    </router-link>
                 </li>
                 <li class="site-menu-item">
-                    <a class="animsition-link" href="index.html"  data-placement="right" data-toggle="tooltip"
+                    <a class="animsition-link" @click.prevent="logout"  href="#"  data-placement="right" data-toggle="tooltip"
                        data-original-title="Report">
                         <i class="site-menu-icon md-chart" aria-hidden="true"></i>
-                        <span class="site-menu-title">Report</span>
+                        <span class="site-menu-title">Logout</span>
                     </a>
                 </li>
 
@@ -177,8 +174,17 @@
 
 <script>
     export default {
-        name: "SideBarLeft"
+        name: "SideBarLeft" ,
+        methods:{
+            logout :function () {
+                localStorage.clear();
+                this.$router.push('/login');
+
+            }
+        }
     }
+
+
 </script>
 
 <style scoped>

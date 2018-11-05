@@ -1,3 +1,4 @@
+
 <template>
     <div class=" page-login-v3 layout-full">
 
@@ -18,9 +19,13 @@
 
             <div v-if="errors.length">
               <b class="text-danger">Please correct the following error(s):</b>
-              <ul >
-                <li class="text-danger custom-error"  v-for="error in errors">{{ error }}</li>
+
+              <ul class="error-messages">
+                <li class="custom-error"  v-for="(value, key) in errors" :key="key">
+                  <span class="text-danger" v-text="value" />
+                </li>
               </ul>
+
             </div>
 
             <div class="form-group form-material floating" data-plugin="formMaterial">
