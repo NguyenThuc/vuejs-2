@@ -236,13 +236,18 @@
 
     <!-- Site Action -->
     <div class="site-action" data-plugin="actionBtn">
-
-        <button type="button"   class="site-action-toggle btn-raised btn btn-success btn-floating">
-            <router-link   to = "/contact/add">
-                <i class="front-icon md-plus animation-scale-up" aria-hidden="true"></i>
-                <i class="back-icon md-close animation-scale-up" aria-hidden="true"></i>
-            </router-link>
+        <router-link   to = "/contact/add">
+        <button type="button" class="site-action-toggle btn-raised btn btn-success btn-floating waves-effect waves-classic">
+            <i class="front-icon md-plus animation-scale-up" aria-hidden="true"></i>
+            <i class="back-icon md-close animation-scale-up" aria-hidden="true"></i>
         </button>
+        </router-link>
+        <!--<button type="button"   class="site-action-toggle btn-raised btn btn-success btn-floating waves-effect waves-classic">-->
+            <!--<router-link   to = "/contact/add">-->
+                <!--<i class="front-icon md-plus animation-scale-up" aria-hidden="true"></i>-->
+                <!--<i class="back-icon md-close animation-scale-up" aria-hidden="true"></i>-->
+            <!--</router-link>-->
+        <!--</button>-->
         <div class="site-action-buttons">
             <button type="button" data-action="trash" class="btn-raised btn btn-success btn-floating animation-slide-bottom">
                 <i class="icon md-delete" aria-hidden="true"></i>

@@ -100,6 +100,111 @@
                                 <a class="dropdown-item" href="#" role="menuitem"><i class="icon md-power" aria-hidden="true"></i> Logout</a>
                             </div>
                         </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link waves-effect waves-light waves-round" data-toggle="dropdown" href="javascript:void(0)" title="Notifications" aria-expanded="false" data-animation="scale-up" role="button">
+                                <i class="icon md-notifications" aria-hidden="true"></i>
+                                <span class="badge badge-pill badge-danger up">5</span>
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link waves-effect waves-light waves-round" data-toggle="dropdown" href="javascript:void(0)" title="Messages" aria-expanded="false" data-animation="scale-up" role="button">
+                                <i class="icon md-email" aria-hidden="true"></i>
+                                <span class="badge badge-pill badge-info up">3</span>
+                            </a>
+                            <!--<div class="dropdown-menu dropdown-menu-right dropdown-menu-media" role="menu">-->
+                                <!--<div class="dropdown-menu-header">-->
+                                    <!--<h5>MESSAGES</h5>-->
+                                    <!--<span class="badge badge-round badge-info">New 3</span>-->
+                                <!--</div>-->
+                                <!--<div class="list-group" role="presentation">-->
+                                    <!--<div data-role="container">-->
+                                        <!--<div data-role="content">-->
+                                            <!--<a class="list-group-item dropdown-item waves-effect waves-light waves-round" href="javascript:void(0)" role="menuitem">-->
+                                                <!--<div class="media">-->
+                                                    <!--<div class="pr-10">-->
+                          <!--<span class="avatar avatar-sm avatar-online">-->
+                            <!--<img src="../../global/portraits/2.jpg" alt="...">-->
+                            <!--<i></i>-->
+                          <!--</span>-->
+                                                    <!--</div>-->
+                                                    <!--<div class="media-body">-->
+                                                        <!--<h6 class="media-heading">Mary Adams</h6>-->
+                                                        <!--<div class="media-meta">-->
+                                                            <!--<time datetime="2017-06-17T20:22:05+08:00">30 minutes ago</time>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="media-detail">Anyways, i would like just do it</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                            <!--</a>-->
+                                            <!--<a class="list-group-item dropdown-item waves-effect waves-light waves-round" href="javascript:void(0)" role="menuitem">-->
+                                                <!--<div class="media">-->
+                                                    <!--<div class="pr-10">-->
+                          <!--<span class="avatar avatar-sm avatar-off">-->
+                            <!--<img src="../../global/portraits/3.jpg" alt="...">-->
+                            <!--<i></i>-->
+                          <!--</span>-->
+                                                    <!--</div>-->
+                                                    <!--<div class="media-body">-->
+                                                        <!--<h6 class="media-heading">Caleb Richards</h6>-->
+                                                        <!--<div class="media-meta">-->
+                                                            <!--<time datetime="2017-06-17T12:30:30+08:00">12 hours ago</time>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="media-detail">I checheck the document. But there seems</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                            <!--</a>-->
+                                            <!--<a class="list-group-item dropdown-item waves-effect waves-light waves-round" href="javascript:void(0)" role="menuitem">-->
+                                                <!--<div class="media">-->
+                                                    <!--<div class="pr-10">-->
+                          <!--<span class="avatar avatar-sm avatar-busy">-->
+                            <!--<img src="../../global/portraits/4.jpg" alt="...">-->
+                            <!--<i></i>-->
+                          <!--</span>-->
+                                                    <!--</div>-->
+                                                    <!--<div class="media-body">-->
+                                                        <!--<h6 class="media-heading">June Lane</h6>-->
+                                                        <!--<div class="media-meta">-->
+                                                            <!--<time datetime="2017-06-16T18:38:40+08:00">2 days ago</time>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="media-detail">Lorem ipsum Id consectetur et minim</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                            <!--</a>-->
+                                            <!--<a class="list-group-item dropdown-item waves-effect waves-light waves-round" href="javascript:void(0)" role="menuitem">-->
+                                                <!--<div class="media">-->
+                                                    <!--<div class="pr-10">-->
+                          <!--<span class="avatar avatar-sm avatar-away">-->
+                            <!--<img src="../../global/portraits/5.jpg" alt="...">-->
+                            <!--<i></i>-->
+                          <!--</span>-->
+                                                    <!--</div>-->
+                                                    <!--<div class="media-body">-->
+                                                        <!--<h6 class="media-heading">Edward Fletcher</h6>-->
+                                                        <!--<div class="media-meta">-->
+                                                            <!--<time datetime="2017-06-15T20:34:48+08:00">3 days ago</time>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="media-detail">Dolor et irure cupidatat commodo nostrud nostrud.</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                            <!--</a>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="dropdown-menu-footer" role="presentation">-->
+                                    <!--<a class="dropdown-menu-footer-btn waves-effect waves-light waves-round" href="javascript:void(0)" role="button">-->
+                                        <!--<i class="icon md-settings" aria-hidden="true"></i>-->
+                                    <!--</a>-->
+                                    <!--<a class="dropdown-item waves-effect waves-light waves-round" href="javascript:void(0)" role="menuitem">-->
+                                        <!--See all messages-->
+                                    <!--</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        </li>
+
+
                         <li class="nav-item" id="toggleChat">
                             <a class="nav-link" data-toggle="site-sidebar" href="#" title="Chat"
                                data-url="site-sidebar.tpl">
@@ -127,48 +232,78 @@
             </div>
         </nav>
 
-        <div class="site-menubar site-menubar-dark">
-            <ul class="site-menu">
-                <li class="site-menu-item">
-                    <a class="animsition-link" href="index.html"  data-placement="right" data-toggle="tooltip"
-                       data-original-title="Home">
-                        <i class="site-menu-icon md-home" aria-hidden="true"></i>
-                        <span class="site-menu-title">Home</span>
-                    </a>
-                </li>
-                <li class="site-menu-item active">
-                    <router-link  data-placement="right" data-toggle="tooltip"
-                                  data-original-title="Contact" to="/contact" class="animsition-link">
-                        <i class="site-menu-icon md-city-alt" aria-hidden="true"></i>
-                        <span class="site-menu-title">Contact</span>
-                    </router-link>
-                </li>
-                <li class="site-menu-item">
-                    <router-link  data-placement="right" data-toggle="tooltip"
-                                  data-original-title="Contact" to="/contact/add" class="animsition-link">
-                        <i class="site-menu-icon md-label" aria-hidden="true"></i>
-                        <span class="site-menu-title">Add Contact</span>
-                    </router-link>
-                </li>
-                <li class="site-menu-item">
-                    <a class="animsition-link" @click.prevent="logout"  href="#"  data-placement="right" data-toggle="tooltip"
-                       data-original-title="Report">
-                        <i class="site-menu-icon md-chart" aria-hidden="true"></i>
-                        <span class="site-menu-title">Logout</span>
-                    </a>
-                </li>
 
-                <li class="site-menu-item">
-                    <a class="animsition-link" href="index.html"  data-placement="right" data-toggle="tooltip"
-                       data-original-title="Settings">
-                        <i class="site-menu-icon md-settings" aria-hidden="true"></i>
-                        <span class="site-menu-title">Setting</span>
+        <div class="site-menubar site-menubar-dark mm-menu mm-hasnavbar-bottom-1">
+            <div class="mm-navbar mm-navbar-bottom mm-navbar-bottom-1 mm-navbar-size-1">
+
+                <div class="site-menubar-footer">
+
+                    <a   v-on:click="logout" class="fold-show" href="javascript: void(0);" data-placement="top" data-toggle="tooltip" data-original-title="Logout">
+                        <span class="icon md-power" aria-hidden="true"></span>
                     </a>
-                </li>
+                </div>
 
 
-            </ul>
+
+            </div>
+            <div class="mm-panels scrollable scrollable-inverse scrollable-vertical is-disabled">
+                <div class="mm-panel mm-hasnavbar mm-opened mm-current scrollable-container" id="mm-0" style="">
+
+                    <ul class="site-menu mm-listview scrollable-content" style="">
+
+                        <li class="site-menu-item">
+                            <a class="animsition-link "  href="#"  >
+                                <i class="site-menu-icon md-home" aria-hidden="true"></i>
+                                <span class="site-menu-title">Home</span>
+                            </a>
+                        </li>
+                        <li class="site-menu-item active">
+                            <a class="animsition-link" href="#" data-placement="right"
+                               data-toggle="tooltip" data-original-title="Company">
+                                <i class="site-menu-icon md-city-alt" aria-hidden="true"></i>
+                                <span class="site-menu-title">Company</span>
+                            </a>
+                        </li>
+                        <li class="site-menu-item">
+                            <a class="animsition-link" href="#" data-placement="right"
+                               data-toggle="tooltip" data-original-title="Contact">
+                                <i class="site-menu-icon md-account-box" aria-hidden="true"></i>
+                                <span class="site-menu-title">Contact</span>
+                            </a>
+                        </li>
+                        <li class="site-menu-item">
+                            <a class="animsition-link" href="#" data-placement="right" data-toggle="tooltip"
+                               data-original-title="Filter">
+                                <i class="site-menu-icon md-label" aria-hidden="true"></i>
+                                <span class="site-menu-title">Filter</span>
+                            </a>
+                        </li>
+                        <li class="site-menu-item">
+                            <a class="animsition-link" href="#" data-placement="right" data-toggle="tooltip"
+                               data-original-title="Report">
+                                <i class="site-menu-icon md-chart" aria-hidden="true"></i>
+                                <span class="site-menu-title">Report</span>
+                            </a>
+                        </li>
+
+                        <li class="site-menu-item">
+                            <a class="animsition-link" href="#" data-placement="right" data-toggle="tooltip"
+                               data-original-title="Settings">
+                                <i class="site-menu-icon md-settings" aria-hidden="true"></i>
+                                <span class="site-menu-title">Setting</span>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+                <div class="scrollable-bar scrollable-bar-vertical is-disabled scrollable-bar-hide" draggable="false">
+                    <div class="scrollable-bar-handle"></div>
+                </div>
+            </div>
         </div>
+
+
     </div>
 </template>
 
@@ -189,8 +324,5 @@
 
 <style scoped>
 
-    .fold-show {
-
-    }
 
 </style>
