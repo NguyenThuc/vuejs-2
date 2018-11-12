@@ -102,7 +102,7 @@
                 e.preventDefault();
             },
             onSubmit () {
-                axios.post('https://pcc-test.stringee.com/v1/account', JSON.stringify(this.user))
+                this.$http.post('/v1/account', JSON.stringify(this.user))
                     .then(respond => {
                         // login successful if there's a jwt token in the response
                         if (respond.data.msg == "Success") {

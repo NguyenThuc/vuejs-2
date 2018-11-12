@@ -179,34 +179,25 @@
                 </span>
                                 </th>
                                 <th class="cell-300" scope="col">Name</th>
-                                <th class="cell-300" scope="col">Phone</th>
-                                <th scope="col">Email</th>
+                                <th class="cell-300" scope="col">Job Title</th>
+                                <th scope="col">Company</th>
+                                <th scope="col">Company Name</th>
+                                <th scope="col">About</th>
                                 <th class="suf-cell"></th>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr data-url="panel.tpl" data-toggle="slidePanel">
-                                <td class="pre-cell"></td>
-                                <td class="cell-30">
-                <span class="checkbox-custom checkbox-primary checkbox-lg">
-                  <input type="checkbox" class="contacts-checkbox selectable-item" id="contacts_1"
-                  />
-                  <label for="contacts_1"></label>
-                </span>
-                                </td>
-                                <td class="cell-300">
-                                    <a class="avatar" href="#">
-                                        <!--<img class="img-fluid" src="../../global/portraits/1.jpg" alt="...">-->
-                                    </a>
-                                    Herman Beck
-                                </td>
-                                <td class="cell-300">(119)-298-8025</td>
-                                <td>julio.williamson73@gmail.com</td>
-                                <td class="suf-cell"></td>
-                            </tr>
 
+<!--{{datas.rows}}-->
+<!--<tr v-for='data in datas'>-->
+    <!--<td>{{data.id}}</td>-->
+    <!--<td>{{data.name}}</td>-->
+    <!--<td>{{data.password}}</td>-->
+    <!--<td>{{data.age}}</td>-->
+<!--</tr>-->
 
-                            <tr data-url="panel.tpl" data-toggle="slidePanel">
+                            <tr   v-for='data in datas.rows' data-url="panel.tpl" data-toggle="slidePanel">
+
                                 <td class="pre-cell"></td>
                                 <td class="cell-30">
                 <span class="checkbox-custom checkbox-primary checkbox-lg">
@@ -215,14 +206,18 @@
                   <label for="contacts_10"></label>
                 </span>
                                 </td>
-                                <td class="cell-300">
-                                    <a class="avatar" href="#">
-                                        <!--<img class="img-fluid" src="../../global/portraits/10.jpg" alt="...">-->
-                                    </a>
-                                    Ronnie Ellis
-                                </td>
-                                <td class="cell-300">(769)-963-2966</td>
-                                <td>erin.miller29@yahoo.com</td>
+                                <!--<td class="cell-300">-->
+                                    <!--<a class="avatar" href="#">-->
+                                        <!--&lt;!&ndash;<img class="img-fluid" src="../../global/portraits/10.jpg" alt="...">&ndash;&gt;-->
+                                    <!--</a>-->
+                                    <!--Ronnie Ellis-->
+                                <!--</td>-->
+                                <td class="">{{data.name}}</td>
+                                <td class="">{{data.job_title}}</td>
+                                <td class="">{{data.company}}</td>
+                                <td class="">{{data.company_name}}</td>
+                                <td class="">{{data.about}}</td>
+
                                 <td class="suf-cell"></td>
                             </tr>
                             </tbody>
@@ -327,7 +322,40 @@
 
     export default {
         name: "Contact",
-        components : {TheFooter, SideBarLeft }
+        components : {TheFooter, SideBarLeft } ,
+        data(){
+            return {
+                datas:[] ,
+                name :[],
+                job_title :[],
+                company :[],
+                company_name :[],
+                about :[],
+            }
+        },
+        created:function(){
+            this.listContact();
+        },
+        methods : {
+            listContact() {
+                this.auth_token = localStorage.getItem("auth_token") ;
+                this.$http.get('/v1/contact' , {
+                    headers: {
+                        'X-STRINGEE-AUTH' : eval(this.auth_token),
+                    }
+                })
+                    .then(respond => {
+                        //   console.log(respond);
+                        if(respond.data.msg=="Success") {
+                            this.datas=respond.data.data;
+                        }
+                        return respond.data;
+                    })
+                    .catch(e => {
+                        this.errors.push(e)
+                    })
+            }
+        }
     }
 
 

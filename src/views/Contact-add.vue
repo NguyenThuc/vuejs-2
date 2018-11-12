@@ -35,6 +35,18 @@
 
                                 <form  method="post"  v-on:submit.prevent="addContact" >
 
+                                    <div v-if="errors.length">
+                                        <b class="text-danger">Please correct the following error(s):</b>
+
+                                        <ul class="error-messages">
+                                            <li class="custom-error"  v-for="(value, key) in errors" :key="key">
+                                                <span class="text-danger" v-text="value" />
+                                            </li>
+                                        </ul>
+
+                                    </div>
+
+
                                     <div class="form-group form-group-sm row">
                                         <label class="col-md-3 col-form-label font-weight-400">Full Name: </label>
                                         <div class="col-md-9">
@@ -127,8 +139,8 @@
                 e.preventDefault();
             },
             addContact () {
-               this.auth_token = localStorage.getItem("auth_token") ;
-                axios.post('https://pcc-test.stringee.com/v1/contact' , JSON.stringify(this.form) ,{
+                this.auth_token = localStorage.getItem("auth_token") ;
+                this.$http.post('/v1/contact' , JSON.stringify(this.form) ,{
                     headers: {
                         'X-STRINGEE-AUTH' : eval(this.auth_token),
                     }
@@ -137,6 +149,8 @@
                      //   console.log(respond);
                         if(respond.data.msg=="Success") {
                             this.$router.push('/contact');
+                        }else {
+                            this.errors.push(respond.data.msg );
                         }
                         return respond.data;
                     })
